@@ -11,15 +11,15 @@ name: Build and Deploy to GKE
 on:
   push:
     branches:
-      - main
+      - standard-gke
 
 # Environment variables available to all jobs and steps in this workflow
 env:
   GKE_PROJECT: ${{ secrets.GKE_PROJECT }}
   GKE_EMAIL: ${{ secrets.GKE_EMAIL }}
   GITHUB_SHA: ${{ github.sha }}
-  GKE_ZONE: asia-southeast2
-  GKE_CLUSTER: autopilot-test1
+  GKE_ZONE: asia-south1-b
+  GKE_CLUSTER: standard-test1
   IMAGE: web-app
   REGISTRY_HOSTNAME: gcr.io
   DEPLOYMENT_NAME: wep-app  
