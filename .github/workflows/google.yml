@@ -18,6 +18,7 @@ on:
 # Environment variables available to all jobs and steps in this workflow
 env:
   PROJECT_ID: ${{ secrets.GKE_DEV_PROJECT }}
+  GKE_EMAIL: ${{ secrets.GKE_EMAIL }}
   GKE_CLUSTER: autopilot-test1
   GKE_ZONE: asia-southeast2
   DEPLOYMENT_NAME: test-k8s
