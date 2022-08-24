@@ -15,14 +15,14 @@ on:
 
 # Environment variables available to all jobs and steps in this workflow
 env:
-  PROJECT_ID: ${{ secrets.GKE_PROJECT }}
-  GITHUB_SHA: ${{ github.sha }}
+  GKE_PROJECT: ${{ secrets.GKE_PROJECT }}
   GKE_EMAIL: ${{ secrets.GKE_EMAIL }}
-  GKE_CLUSTER: autopilot-test1
+  GITHUB_SHA: ${{ github.sha }}
   GKE_ZONE: asia-southeast2
-  DEPLOYMENT_NAME: wep-app
-  REGISTRY_HOSTNAME: gcr.io
+  GKE_CLUSTER: autopilot-test1
   IMAGE: web-app
+  REGISTRY_HOSTNAME: gcr.io
+  DEPLOYMENT_NAME: wep-app  
   NODE_ENV: production
   server: ./server
   client: ./client
