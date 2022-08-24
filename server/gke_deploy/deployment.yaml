@@ -5,7 +5,7 @@ metadata:
   labels:
     app: web-app
 spec:
-  replicas: 0
+  replicas: 1
   selector:
     matchLabels:
       app: web-app
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: web-app
-          image: REGISTRY_HOSTNAME/vocal-lamp-357106/IMAGE:GITHUB_SHA
+          image: REGISTRY_HOSTNAME/spring2020-274107/IMAGE:GITHUB_SHA
           ports:
             - containerPort: 8080
