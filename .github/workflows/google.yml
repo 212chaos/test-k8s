@@ -21,6 +21,7 @@ env:
   GKE_CLUSTER: autopilot-test1
   GKE_ZONE: asia-southeast2
   DEPLOYMENT_NAME: wep-app
+  REGISTRY_HOSTNAME: gcr.io
   IMAGE: web-app
   NODE_ENV: production
   server: ./server
