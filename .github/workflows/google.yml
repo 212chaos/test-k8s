@@ -19,7 +19,7 @@ env:
   GKE_EMAIL: ${{ secrets.GKE_EMAIL }}
   GKE_CLUSTER: autopilot-test1
   GKE_ZONE: asia-southeast2
-  DEPLOYMENT_NAME: test-k8s
+  DEPLOYMENT_NAME: wep-app
   IMAGE: test-k8s
   NODE_ENV: production
   server: ./server
