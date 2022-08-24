@@ -20,7 +20,7 @@ env:
   GKE_CLUSTER: autopilot-test1
   GKE_ZONE: asia-southeast2
   DEPLOYMENT_NAME: wep-app
-  IMAGE: test-k8s
+  IMAGE: web-app
   NODE_ENV: production
   server: ./server
   client: ./client
