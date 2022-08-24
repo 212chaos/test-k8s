@@ -13,17 +13,19 @@ name: Build and Deploy to GKE
 on:
   push:
     branches:
-      - gke_deploy
+      - main
 
 # Environment variables available to all jobs and steps in this workflow
 env:
-  PROJECT_ID: ${{ secrets.GKE_DEV_PROJECT }}
+  PROJECT_ID: ${{ secrets.GKE_PROJECT }}
   GKE_EMAIL: ${{ secrets.GKE_EMAIL }}
   GKE_CLUSTER: autopilot-test1
   GKE_ZONE: asia-southeast2
   DEPLOYMENT_NAME: test-k8s
   IMAGE: test-k8s
-  KEY: ${{ secrets.KEY }}
+  NODE_ENV: production
+  server: ./server
+  client: ./client
 
 jobs:
   setup-build-publish-deploy:
