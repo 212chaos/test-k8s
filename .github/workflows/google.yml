@@ -20,9 +20,9 @@ env:
   GITHUB_SHA: ${{ github.sha }}
   GKE_ZONE: asia-south1-b
   GKE_CLUSTER: standard-test1
-  IMAGE: web-app
+  IMAGE: web-app-service
   REGISTRY_HOSTNAME: gcr.io
-  DEPLOYMENT_NAME: wep-app  
+  DEPLOYMENT_NAME: wep-app-service  
   NODE_ENV: production
   server: ./server
   client: ./client
